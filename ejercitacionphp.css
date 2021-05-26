@@ -1,0 +1,154 @@
+header{
+	text-align: justify;
+	font-family: Tahoma, sans-serif;
+}
+
+header nav{
+  padding-bottom: 8px;
+  padding-top: 10px;
+}
+
+body{
+	background-color:#4726d8;
+}
+
+.input, select{
+  width : 400px;
+  margin: 2px;
+}
+
+form{
+  margin: 0 auto;
+  width: 400px;
+  /* Esquema del formulario */
+  padding: 1em;
+  border: 2px solid black;
+  border-radius: 1em;
+}
+label, select {
+  /* Tamaño y alineación uniforme */
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+}
+footer{
+	background-color: red;
+	color: black;
+	text-align: center;
+  font-family:Tahoma, sans-serif;
+  margin: 10px;
+}
+
+p{
+    text-align: center;
+    font-family:Tahoma, sans-serif;
+    font-size: 1.2em;
+}
+
+.cabecera{
+    text-align: center;
+    font-family: Tahoma, sans-serif;
+}
+
+table{ 
+    display: table;
+    border-collapse: separate;
+    border-spacing: 0px;
+    border-color: rgb(32, 17, 17);
+  }
+
+li{
+    font-size: 1.2em;
+}
+
+h4{
+    font-family:Tahoma, sans-serif;
+    font-size: 1.2em;
+    margin: 5px;
+}
+
+h2{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+}
+
+
+
+table tr th{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+  /* galeria */
+  .galeria {
+    height: calc( var(--h) + 3em);
+    width: var(--w);
+    margin: 1em auto;
+    border: 1px solid brown;
+    position: relative;  
+  }
+  .galeria img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 3s;
+  }
+  
+  .galeria input[type=radio] {
+    position: relative;
+    bottom: calc(-1 * var(--h) - 1.5em);
+    left: .5em;
+  }
+  
+  .galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
+    opacity: 1;
+  }
+  
+  .galeria input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
+    opacity: 1;
+  }
+  
+  .galeria input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3) {
+    opacity: 1;
+  }
+  
+  .galeria input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4) {
+    opacity: 1;
+  }
+  
+  .galeria input[type=radio]:nth-of-type(5):checked ~ img:nth-of-type(5) {
+    opacity: 1;
+  }
+
+  /*barra navegacion*/
+
+  nav {
+    padding: 3em;
+    font-family: Tahoma,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: red;
+  }
+  nav li a {
+    color: black;
+    display: block;
+    text-decoration: none;
+    padding: .5em 1em;
+  }
+  nav li a:hover {
+    background: white;
+    color: black;
+  }
+  
+  @media screen and (min-width: 480px) {
+    nav ul {
+      display: flex;
+     justify-content:space-between;
+    }
+  }
+
